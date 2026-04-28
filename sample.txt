@@ -1,0 +1,15 @@
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+cd "c:\Users\pc\OneDrive\Desktop\C++ Practice Programs\" ; if ($?) { g++ 15.cpp -o 15 } ; if ($?) { .\15 }
+22
+233
+55
+
+
+
+55
