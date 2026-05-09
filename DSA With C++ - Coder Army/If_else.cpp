@@ -156,17 +156,26 @@ int main(){
             
         // }
     // }
-    for (int i = 0; i < num; i++)
-    {
-        /* code */
-        if(i%2==0)
-        {
-            cout<<" ";
-        }
-        else{
-            cout<<i<<" ";
-        }
-    }
+    // for (int i = 0; i < num; i++)
+    // {
+    //     /* code */
+    //     if(i%2==0)
+    //     {
+    //         cout<<" ";
+    //     }
+    //     else{
+    //         cout<<i<<" ";
+    //     }
+    // }
+    
+    // int n;
+    // cin>>n;
+
+    // for (int i = 0; i <= n; i++)
+    // {
+    //     /* code */
+
+    // }
     
     
 
