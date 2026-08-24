@@ -1,7 +1,7 @@
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
+// int main(){
     // int row,col;
     // int n;
     
@@ -107,80 +107,126 @@ int main(){
 
     //First Pattern
 
-    // int row=5, col=6;
-    // int n;
+// #include <iostream>
+// using namespace std;
 
-    // cout<<"Enter the input: ";
-    // cin>>n;
+// int main()
+// {
+//     int n;
+//     cin>>n;
 
-    // for (row = 1; row <=5 ; row=row+1)
-    // {
-    //     /* Print number */
-    //     for(col=1;col<=6;col=col+1)
-    //     cout<<n<<" ";
+//     for (int i = 1; i <=n; i++)
+//     {
+//         /* code */
+//         for (int j = 1; j <= n-i; j++)
+//         {
+//             /* code */
+//             cout<<"  ";
+//         }
+
+//         // Numbers
+//         for (int j = i; j >= 1; j--)
+//         {
+//             /* code */
+//             cout<<j<<" ";
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
     
-    //     cout<<endl;
-    // }
+// }
 
 
-    //Second Pattern
+// Q2. Second Pattern
 
-    // int row=6,col=5;
-    // int n;
+// #include<iostream>
+// using namespace std;
 
-    // cout<<"Enter the input: ";
-    // cin>>n;
+// int main() 
+// {
+//     int n;
+//     cin>>n;
 
-    // for(row = 1; row <=6; row=row+1)
-    // {
-    //     /*Print number*/
-    //     for (col = 1;col <= 5; col=col+1)
-    //     cout<<col*col<<" ";
+//     for (int i = 1; i <= n; i++)
+//     {
+//         /* code */
+//         for (int j = 1; j <= n-i; j++)
+//         {
+//             /* code */
+//             cout<<"  ";
+//         }
 
-    //     cout<<endl;
-        
-    // }
+//         // Characters
+//         for (int j = 1; j <= i; j++)
+//         {
+//             /* code */
+//             cout<< char('A' + i - 1) << " ";
+//         }
+//         cout<< endl;
+//     }
+//     return 0;
+// }
 
-    //Third Pattern
+// Q3. #include <iostream>
 
-    // int col, row;
-    // int n;
+// #include<iostream>
+// using namespace std;
 
-    // cout<<"Enter the input: ";
-    // cin>>n;
+// int main()
+// {
+//     int n;
+//     cin>>n;
 
-    // for(row=1; row<=5; row=row+1)
-    // {
-    //     for ( col = 1; col <= 6; col= col+1)
-    //     {
-    //         /* code */
-    //         cout<<col*col*col<<" ";
+//     for (int i = 1; i <= n; i++)
+//     {
+//         /* Spaces */
+//         for (int j = 1; j <= n-i ; j++)
+//         {
+//             /* code */
+//             cout<<"  ";
+//         }
 
-    //     }
-    //     cout<<endl;
-        
-    // }
+//         // Numbers
+//         for (int j = n; j >=n-i+1; j--)
+//         {
+//             /* code */
+//             cout<< j << " ";
+//         }
+//         cout<< endl;
+//     }
+//     return 0;
+    
+// }
 
-    //Fourth Pattern
 
-    int col, row;
+// Q4. Fourth Pattern
+
+ #include<iostream>
+using namespace std;
+
+int main() 
+{
     int n;
-
-    cout<<"Enter the input: ";
     cin>>n;
 
-    for ( row = 1; row <=5; row=row+1)
+    for (int i = 1; i <= n; i++)
     {
         /* code */
-        for ( char name ='F'; name<='K'; name=name+1)
+        for (int j = 1; j <= n-i; j++)
         {
             /* code */
-            cout<<name<<" ";
+            cout<<"  ";
         }
-        cout<<endl;
-        
+
+        // Characters
+        for (int j = 0; j < i; j++)
+        {
+            /* code */
+            cout<< char('A' + n - 1 - j) << " ";
+        }
+        cout<< endl;
     }
-    
-
-
+    return 0;
 }
+
+
