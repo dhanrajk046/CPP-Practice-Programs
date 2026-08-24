@@ -45,22 +45,23 @@ int main()
 
 // H.W.
     // Q1
-    //  int binary, rem;
-    //  int ans = 0;
-    //  int power = 1;
+     int binary, rem;
+     int ans = 0;
+     int power = 1;
 
-    // cout<<"Enter binary number: ";
-    // cin>>binary;
+    cout<<"Enter binary number: ";
+    cin>>binary;
 
-    // while (binary > 0)
-    // {
-    //     /* code */
-    //     rem = binary % 10;
-    //     ans = ans + rem * power;
-    //     power =power*2;
-    //     binary = binary/10;
-    // }
-    // cout<<"Decimal number: "<<ans;
+    while (binary > 0)
+    {
+        /* code */
+        rem = binary % 10;
+        ans = ans + rem * power;
+        power =power*2;
+        binary = binary/10;
+    }
+    cout<<"Decimal number: "<<ans;
+}
 
     // Q2
     //  int n, rem;

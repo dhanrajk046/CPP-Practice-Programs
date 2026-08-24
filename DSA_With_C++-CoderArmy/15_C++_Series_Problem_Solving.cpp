@@ -21,25 +21,25 @@
 
 // Q2. Armstrong Number
 
-#include<iostream>
-#include <cmath>
-using namespace std;
+// #include<iostream>
+// #include <cmath>
+// using namespace std;
 
-// Count Number of Digits
-int countdigit(int n)
-{
-    if(n==0)
-    return 1;
+// // Count Number of Digits
+// int countdigit(int n)
+// {
+//     if(n==0)
+//     return 1;
 
-    int count=0;
+//     int count=0;
 
-    while(n)
-    {
-        count++;
-        n/=10;
-    }
-    return count;
-}
+//     while(n)
+//     {
+//         count++;
+//         n/=10;
+//     }
+//     return count;
+// }
 
 // bool Armstrong(int num, int digit)
 // {
@@ -58,22 +58,22 @@ int countdigit(int n)
 //         return 0;
 // }
 
-void Armstrong(int num, int digit)
-{
-    int n=num, ans=0, rem;
-    while(n)
-    {
-        rem = n%10;
-        n/=10;
-        // ans = ans+pow(rem, digit);
-        ans = ans + round(pow(rem, digit));
-    }
+// void Armstrong(int num, int digit)
+// {
+//     int n=num, ans=0, rem;
+//     while(n)
+//     {
+//         rem = n%10;
+//         n/=10;
+//         // ans = ans+pow(rem, digit);
+//         ans = ans + round(pow(rem, digit));
+//     }
 
-    if(ans == num)
-    cout<<1;
-    else
-    cout<<0;
-}
+//     if(ans == num)
+//     cout<<1;
+//     else
+//     cout<<0;
+// }
 
 
 // bool Armstrong(int num, int digit)
@@ -104,17 +104,39 @@ void Armstrong(int num, int digit)
 //         return 0;
 // }
 
+// int main()
+// {
+//     int num;
+//     cin >> num;
+
+//     // Count digit
+//     int digit = countdigit(num);
+
+//     // Armstrong number
+//     Armstrong(num,digit);
+
+//     // return 0;
+// }
+
+ // Homework 
+
+ // Q5
+
+
+#include<iostream>
+#include<cmath>
+#include <algorithm>
+using namespace std;
+
 int main()
 {
-    int num;
-    cin >> num;
+    int a = -25;
+    int b = 16;
+    cout << "Minimum: " << min(a, b) << endl;
+    cout << "Maximum: " << max(a, b) << endl;
+    cout << "Absolute value of a: " << abs(a) << endl;
+    cout << "Square root of b: " <<sqrt(b) << endl;
+    cout<< "a raised to power 2: " << pow(a, 2) << endl;
 
-    // Count digit
-    int digit = countdigit(num);
-
-    // Armstrong number
-    Armstrong(num,digit);
-
-    // return 0;
+    return 0;
 }
-
