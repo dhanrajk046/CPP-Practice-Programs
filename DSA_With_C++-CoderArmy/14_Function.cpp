@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
 // Q1. Sum of 2 no. using functions
 
@@ -171,15 +171,188 @@ using namespace std;
 // }
 
 
+// int main()
+// {
+//     int a,b;
+//     cin>>a>>b;
+
+//     swap(a,b);
+//     cout<<a<<" "<<b<<endl;
+
+//     float f1=4.8, f2=3.6;
+//     swap(f1,f2);
+//     cout<<f1<<" "<<f2;
+// }
+
+
+// HomeWork
+
+// Q1
+
+// #include<iostream>
+// using namespace std;
+
+// int cube(int n)
+// {
+//     return n*n*n;
+// }
+
+// int main()
+// {
+//     int n;
+//     cin>>n;
+    
+//     cout<< cube(n);
+
+//     return 0;
+
+// }
+
+// Q2
+// Constrait: -5000 <= n <= 5000
+
+// #include<iostream>
+// using namespace std;
+
+// int reverseNumber(int n)
+// {
+//     int sign = 1;
+
+//     if (n<0)
+//     {
+//         sign = -1;
+//         n = -n;
+//     }
+
+//     int rev = 0;
+
+//     while (n>0)
+//     {
+//         int digit = n%10;
+//         rev = rev*10 + digit;
+//         n = n/10;
+//     }
+//     return sign*rev;   
+// }
+
+// int main()
+// {
+//     int n;
+//     cin>>n;
+
+//     cout<<reverseNumber(n);
+
+//     return 0;
+// }
+
+// Q3
+
+// #include<iostream>
+// using namespace std;
+
+// void change(int &a, int &b, int &c)
+// {
+//     int temp = a;
+
+//     a = c;
+//     c = b;
+//     b = temp;
+// }
+
+// int main()
+// {
+//     int a, b, c;
+//     cin>>a>>b>>c;
+
+//     change(a, b, c);
+
+//     cout<< a << " " << b << " " << c;
+    
+//     return 0;
+// }
+
+// Q4
+
+// Note: With the stated range, a+b can exceeds the range of int in some cases if the upper bound is really 100000, so this particular constraint is safe for int.
+
+// #include<iostream>
+// using namespace std;
+
+// void swapNumbers(int &a, int &b)
+// {
+//     a = a + b;
+//     b = a - b;
+//     a = a - b;
+// }
+
+// int main()
+// {
+//     int a, b;
+//     cin >> a >> b ;
+
+//     swapNumbers(a,b);
+
+//     cout << a << " " << b;
+
+//     return 0;
+// }
+
+
+// Q5
+
+// #include<iostream>
+// using namespace std;
+
+// void printMessage(int n)
+// {
+//     for (int i = 1; i <= n; i++)
+//     {
+//         cout<< "Hello Coder Army" <<endl;
+//     }
+    
+// }
+// int main()
+// {
+//     int n;
+//     cin>> n;
+
+//     printMessage(n);
+
+//     return 0;
+// }
+
+
+// Q6
+// We can calculate: nCr = n! / (r! * (n-r)!)
+
+
+
+#include<iostream>
+using namespace std;
+
+int factorial(int n)
+{
+    int fact = 1;
+
+    for (int i = 1; i <= n; i++)
+    {
+        fact = fact * i;
+     }
+     return fact;
+}
+
+int nCr(int n, int r)
+{
+    return factorial(n) / (factorial(r) * factorial(n-r));
+}
+
 int main()
 {
-    int a,b;
-    cin>>a>>b;
+    int n, r;
+    cin >> n >> r;
 
-    swap(a,b);
-    cout<<a<<" "<<b<<endl;
+    cout << nCr(n ,r);
 
-    float f1=4.8, f2=3.6;
-    swap(f1,f2);
-    cout<<f1<<" "<<f2;
+    return 0;
 }
+
