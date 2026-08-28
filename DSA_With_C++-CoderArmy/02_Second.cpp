@@ -11,7 +11,7 @@ int main()
     // cout<<"Enter your second number: ";
     // cin>>b;
 
-    // cout<<"Sume of numbers is: "<<a+b;
+    // cout<<"Sum of numbers is: "<<a+b;
 
     int a =1234;
     char c = 'b';
