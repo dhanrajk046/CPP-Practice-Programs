@@ -248,31 +248,82 @@
 
 // Q6. Find and Print the smallest element in the 2D Array
 
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int rows = 3, cols = 3;
+//     int matrix[3][3] = {
+//         {12,45,3},
+//         {99,34,56},
+//         {7,88,23}
+//     };
+
+//     int minVal = matrix[0][0];
+
+//     for(int i=0; i<rows; i++)
+//     {
+//         for(int j=0; j<cols;j++)
+//         {
+//             if(matrix[i][j]<minVal)
+//             {
+//                 minVal = matrix[i][j];
+//             }
+//         }
+//     }
+
+//     cout<<"The smallest element in the 2D array is: "<<minVal<<endl;
+
+//     return 0;
+// }
+
+
+
+// H.W in copy
+
+// Reverse each row of Matrix
+
 #include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
 
-int main() {
-    int rows = 3, cols = 3;
-    int matrix[3][3] = {
-        {12,45,3},
-        {99,34,56},
-        {7,88,23}
+// Function to reverse each row of the matrix
+void reverseMatrixRows(vector<vector<int>>& matrix) {
+    for (auto& row:matrix) {
+        reverse(row.begin(), row.end());
+    }
+} 
+
+// Helper function to print the matrix
+void printMatrix(const vector<vector<int>>& matrix)
+{
+    for(const auto& row: matrix) {
+        cout<<"[";
+        for(int val:row) {
+            cout<<val<<" ";
+        }
+        cout<<"]\n";
+    }
+}
+
+int main()
+{
+    // 1.Define a sample matrix
+    vector<vector<int>> original_matrix = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
     };
 
-    int minVal = matrix[0][0];
+    cout<<"--- Original Matrix ---\n";
+    printMatrix(original_matrix);
 
-    for(int i=0; i<rows; i++)
-    {
-        for(int j=0; j<cols;j++)
-        {
-            if(matrix[i][j]<minVal)
-            {
-                minVal = matrix[i][j];
-            }
-        }
-    }
+    // 2. Process the matrix (in-place)
+    reverseMatrixRows(original_matrix);
 
-    cout<<"The smallest element in the 2D array is: "<<minVal<<endl;
+    cout<<"\n--- Matrix with Reversed Rows ---\n";
+    printMatrix(original_matrix);
 
     return 0;
 }
