@@ -70,4 +70,4 @@ int main()
 
 // 1. *p dereferences the pointer, which refers to the value stored at the memory address of num.
 
-// 2.  *p = *p + 5 takes the current value (10), adds 5 to it, and stores the result back into the memory location pointed to by p, successfully  updating num to 15.
+// 2.  *p = *p + 5 takes the current value (10), adds 5 to it, and stores the result back into the memory location pointed to by p, successfully updating num to 15.
