@@ -32,3 +32,4 @@ int main()
     delete ptr2;
     delete[] p;
 }
+

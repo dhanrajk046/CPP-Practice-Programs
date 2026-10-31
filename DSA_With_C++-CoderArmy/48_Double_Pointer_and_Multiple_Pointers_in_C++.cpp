@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // void fun(int **p1)
@@ -26,7 +26,7 @@ using namespace std;
 //     // // cout<<n<<endl;
 //     // ***p3 = ***p3+10;
 //     // cout<<n<<endl;
-    
+
 //     cout<<p<<endl;
 //     fun(p2);
 //     cout<<p<<endl;
@@ -42,7 +42,6 @@ using namespace std;
 //     cout<<p+p[3]-p[1];
 //     cout<<endl;
 // }
-
 
 // Q2
 
@@ -130,14 +129,14 @@ int main()
     int n = 10;
     int *p = &n;
     int **q = &p;
-    cout<<p<<endl;                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    cout << p << endl;
 }
 
 /* Homework
 
  Q1. Derefernce Operator
 
-In C++, the derefernce operator is represented by the asterick (*). It is also known as the indirection operator. 
+In C++, the derefernce operator is represented by the asterick (*). It is also known as the indirection operator.
 
 Its primary purpose is to access or modify the value stored at the memory address held by a pointer.
 
@@ -159,10 +158,10 @@ int main()
 {
     int age = 25;       // A normal integer variable
     int *ptr = &age;    // A pointer storing the memory address of 'age'
-    
+
     // 1. Printing the value using the dereference operator
     cout<<"Value of age: "<<*ptr<<endl;  // Output: 25
-    
+
     // 2. Modifying the value through the pointer
     *ptr = 30;         // Changes the value of 'age' to 30
 
@@ -183,27 +182,27 @@ Key Use Cases
 access. Instead of writing (*ptr).member, C++ provides the arrow operator (ptr->member) as a shorthand.
 
 Important Things to Remember
-1. Do not dereference uninitialised or null pointers: Attempting to dereference a nullptr or a pointer pointing to random memory will result 
+1. Do not dereference uninitialised or null pointers: Attempting to dereference a nullptr or a pointer pointing to random memory will result
 in a segementation Fault (Undefined Behavior) and crash your program.
 
-2. Distinguish from Declaration: The asterisk is also used to declare a pointer (e.g., int *ptr;). Don't confuse the declaration syntax with 
+2. Distinguish from Declaration: The asterisk is also used to declare a pointer (e.g., int *ptr;). Don't confuse the declaration syntax with
 the dereferencing action (*ptr = 5;), though they use the same symbol.
 
 
 
 // Q2. What is Reference Variable? Explain with Example
 
-In C++, a reference variable is an alias (an alternative name) for an existing variable. Once a reference is initialised to a variable, any 
+In C++, a reference variable is an alias (an alternative name) for an existing variable. Once a reference is initialised to a variable, any
 changes made to the reference are actually made to the original variable, because they share the exact same memory location.
 
 Syntax
 Todeclare a reference variable, you use the ampersand (&) symbol between the data type and the reference name:
 
-C++ 
+C++
 datatype &refName = variableName;
 
 
-Key characteristics of References 
+Key characteristics of References
 
 1. Must be initialized: You connot declare a reference without pointing it to a variable. It must be bound at creation (e.g., int& ref; will
 cause a compilation error).
@@ -212,9 +211,9 @@ cause a compilation error).
 to it just changes the value of the original variable.
 
 3. No Dereferencing Needed: Unlike pointers (which require * to access the value), you can use a reference variable directly just like a
-normal variable. 
+normal variable.
 
-4. Common Use Case (Function Arguments): Reference are frequently used in functions to pass arguments by reference, allowing the function to 
+4. Common Use Case (Function Arguments): Reference are frequently used in functions to pass arguments by reference, allowing the function to
 modify the caller's variables directly without copying them.
 
 
@@ -278,7 +277,7 @@ carefully.
 
 
 
-Ans 2. Predict the output 
+Ans 2. Predict the output
 
 Output:
 
@@ -335,13 +334,13 @@ Explanation: This is the classic arithmetic swap algorithm using pointers:
 
 Initial: a = 4, b = 5
 
-*i = *i + *j; 
+*i = *i + *j;
 → a = 4 + 5 = 9
 
-*j = *i - *j; 
+*j = *i - *j;
 → b = 9 - 5 = 4
 
-*i = *i - *j; 
+*i = *i - *j;
 → a = 9 - 4 = 5
 
 Final values: a = 5, b = 4. Printed together with cout << a << b; resulting in 54.
